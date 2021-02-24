@@ -26,7 +26,7 @@ const addEventLi = (i) => {
         item.classList.add('fade-out');
         setTimeout(() => {
             outputList.removeChild(item);
-            badge.setAttribute('data-badge', outputList.childElementCount - 1);
+            badge.setAttribute('data-badge', outputList.childElementCount);
             checkEmptyList();
         }, 1500);
     });
